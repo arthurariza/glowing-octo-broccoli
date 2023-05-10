@@ -68,7 +68,7 @@ In the Elixir cell below, create a string `"Hello, world!"`. This is a rite of p
 programmer.
 
 ```elixir
-
+"Hello, world!"
 ```
 
 ## Multiline Strings
@@ -129,7 +129,7 @@ Replace `nil` with your answer.
 </details>
 
 ```elixir
-
+"Hi " <> "Peter"
 ```
 
 ### String Interpolation
@@ -169,7 +169,8 @@ In the Elixir cell below, use **string interpolation** to say `I have #{X - 1} c
 </details>
 
 ```elixir
-answer = nil
+answer = 3
+"I have #{answer} classmates"
 ```
 
 ## Escaping Characters
@@ -249,10 +250,10 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b strings-reading
-$ git add .
-$ git commit -m "finish strings reading"
-$ git push origin strings-reading
+git checkout -b strings-reading
+git add .
+git commit -m "finish strings reading"
+git push origin strings-reading
 ```
 
 Create a pull request from your `strings-reading` branch to your `solutions` branch.
