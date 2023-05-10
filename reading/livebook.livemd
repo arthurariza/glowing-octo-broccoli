@@ -109,7 +109,9 @@ Livebook may change this UI, so if this is instruction is no longer accurate ple
 
 Create an Elixir code cell below. Run some Elixir code such as `1 + 2` in the cell.
 
-<!-- livebook:{"break_markdown":true} -->
+```elixir
+1 + 2
+```
 
 ### Livebook Shortcuts
 
@@ -141,7 +143,10 @@ to see the Markdown content inside.
 
 <div style="padding: 1rem;background-color:lightgray; text-align: center;">
 
+### Click Me My Friend!
+
 ### Click Me
+
 
 </div>
 
@@ -210,7 +215,7 @@ Try uncommenting the following code (Remove the `#` character) then press <kbd>A
 Notice that the `1 + 1` code moves to the left.
 
 ```elixir
-#               1 + 1
+2 + 1 + 1
 ```
 
 If you have not evaluated any Elixir code cells, you may see a warning.
