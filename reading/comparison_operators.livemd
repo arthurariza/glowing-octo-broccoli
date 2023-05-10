@@ -41,6 +41,7 @@ For example, if we check that `5` equals `5`, we return `true`.
 
 ```elixir
 5 == 5
+"one" > "two"
 ```
 
 ### Remembering Greater Than and Less Than
@@ -98,7 +99,7 @@ Using comparison operators, determine if `10 + 10 * 15` is greater than `(10 + 1
 </details>
 
 ```elixir
-
+10 + 10 * 15 > (10 + 10) * 15
 ```
 
 Using comparisons operators, determine if `4 ** 6` is equal to `4 * 4 * 4 * 4 * 4 * 4`.
@@ -113,7 +114,7 @@ Using comparisons operators, determine if `4 ** 6` is equal to `4 * 4 * 4 * 4 * 
 </details>
 
 ```elixir
-
+4 ** 6 == 4 * 4 * 4 * 4 * 4 * 4
 ```
 
 Using comparison operators, determine if `100 / 2` is strictly equal to `50`.
@@ -128,7 +129,8 @@ Using comparison operators, determine if `100 / 2` is strictly equal to `50`.
 </details>
 
 ```elixir
-
+100 / 2 === 50
+div(100, 2) === 50
 ```
 
 ## Comparing Different Data Types
@@ -178,7 +180,7 @@ Use comparison operators to determine if `"hello"` is equal to `"hello"`.
 </details>
 
 ```elixir
-
+"hello" === "hello"
 ```
 
 ## Further Reading
@@ -231,10 +233,10 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b comparison-operators-reading
-$ git add .
-$ git commit -m "finish comparison operators reading"
-$ git push origin comparison-operators-reading
+ git checkout -b comparison-operators-reading
+ git add .
+ git commit -m "finish comparison operators reading"
+ git push origin comparison-operators-reading
 ```
 
 Create a pull request from your `comparison-operators-reading` branch to your `solutions` branch.

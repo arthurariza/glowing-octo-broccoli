@@ -363,8 +363,8 @@ Ensure that you do not already have undesired or unrelated changes by running `g
 ```
  git checkout -b booleans-reading
  git add .
-$ git commit -m "finish booleans reading"
-$ git push origin booleans-reading
+ git commit -m "finish booleans reading"
+ git push origin booleans-reading
 ```
 
 Create a pull request from your `booleans-reading` branch to your `solutions` branch.
