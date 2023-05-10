@@ -178,7 +178,7 @@ hello = "world".
 Enter your solution below.
 
 ```elixir
-
+hello = "world"
 ```
 
 ### Mutation
@@ -262,6 +262,8 @@ Use `IO.inspect` to print the `hello` variable.
 
 ```elixir
 hello = "world!"
+
+IO.inspect(hello)
 ```
 
 ## Further Reading
@@ -314,10 +316,10 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b match-operator-reading
-$ git add .
-$ git commit -m "finish match operator reading"
-$ git push origin match-operator-reading
+ git checkout -b match-operator-reading
+ git add .
+ git commit -m "finish match operator reading"
+ git push origin match-operator-reading
 ```
 
 Create a pull request from your `match-operator-reading` branch to your `solutions` branch.
