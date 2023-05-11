@@ -248,7 +248,7 @@ Ensure that you do not already have undesired or unrelated changes by running `g
 git checkout -b card-counting-exercise
 git add .
 git commit -m "finish card counting exercise"
-$ git push origin card-counting-exercise
+git push origin card-counting-exercise
 ```
 
 Create a pull request from your `card-counting-exercise` branch to your `solutions` branch.
