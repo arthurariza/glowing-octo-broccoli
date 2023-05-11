@@ -55,7 +55,7 @@ actual / total
 Enter your solution below.
 
 ```elixir
-
+12 / 42
 ```
 
 ## Rocket Ship
@@ -81,7 +81,10 @@ mass * acceleration
 Enter your solution below.
 
 ```elixir
+mass = 10
+acceleration = 50
 
+force = mass * acceleration
 ```
 
 ## What Do You Tip?
@@ -105,7 +108,10 @@ initial_cost * tip_percent
 Enter your solution below.
 
 ```elixir
+meal_total = 20
+tip_percentage = 1.15
 
+meal_total * tip_percentage
 ```
 
 ## Pythagorean Theorum
@@ -129,7 +135,10 @@ a ** 2 + b ** 2
 Enter your solution below.
 
 ```elixir
+a = 4
+b = 10
 
+c = a ** 2 + b ** 2
 ```
 
 ## Bonus: Square Root
@@ -149,7 +158,9 @@ c_squared = 116
 Enter your solution below.
 
 ```elixir
+c_square = 116
 
+square_root = :math.sqrt(c_square)
 ```
 
 ## Mark As Completed
@@ -196,10 +207,10 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b fun-formulas-exercise
-$ git add .
-$ git commit -m "finish fun formulas exercise"
-$ git push origin fun-formulas-exercise
+ git checkout -b fun-formulas-exercise
+ git add .
+ git commit -m "finish fun formulas exercise"
+ git push origin fun-formulas-exercise
 ```
 
 Create a pull request from your `fun-formulas-exercise` branch to your `solutions` branch.
