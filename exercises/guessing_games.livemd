@@ -35,7 +35,14 @@ Ensure your solutions works for both an incorrect and correct player guess.
 Enter your solution below.
 
 ```elixir
+guess = "guess"
+answer = "answer"
 
+if guess == answer do
+  "Correct"
+else
+  "Incorrect"
+end
 ```
 
 ## Bonus: Guess the Random Word
@@ -67,7 +74,14 @@ Armed with this knowledge, you're going to create a word guessing game.
 Enter your solution below.
 
 ```elixir
+guess = Enum.random(["hello", "hi", "howdy"])
+answer = Enum.random(["hello", "hi", "howdy"])
 
+if guess == answer do
+  "Correct"
+else
+  "Incorrect"
+end
 ```
 
 ## Bonus: Guess the Number
@@ -119,7 +133,16 @@ Now let's build a number guessing game
 Enter your solution below.
 
 ```elixir
+guess = Enum.random(1..10)
+answer = Enum.random(1..10)
 
+IO.inspect([guess, answer])
+
+cond do
+  guess == answer -> "Correct!"
+  guess < answer -> "Too low!"
+  guess > answer -> "Too High!"
+end
 ```
 
 ## Mark As Completed
@@ -166,10 +189,10 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b guessing-games-exercise
-$ git add .
-$ git commit -m "finish guessing games exercise"
-$ git push origin guessing-games-exercise
+ git checkout -b guessing-games-exercise
+ git add .
+ git commit -m "finish guessing games exercise"
+ git push origin guessing-games-exercise
 ```
 
 Create a pull request from your `guessing-games-exercise` branch to your `solutions` branch.
