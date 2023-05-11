@@ -72,7 +72,9 @@ high = 1
 Enter your solution below.
 
 ```elixir
-
+low = -1
+normal = 0
+high = 1
 ```
 
 ## High Card
@@ -92,7 +94,9 @@ initial_count + high
 Enter your solution below.
 
 ```elixir
+count = 0
 
+count = count + high
 ```
 
 ## Low Card
@@ -112,7 +116,8 @@ initial_count + low
 Enter your solution below.
 
 ```elixir
-
+initial_count = 0
+initial_count + low
 ```
 
 ## Multiple Cards
@@ -134,7 +139,8 @@ You could omit the **normal** cards or allow **high** and **low** cards to balan
 Enter your solution below.
 
 ```elixir
-
+initial_count = 5
+initial_count + 5 * high + 2 * low + 2 * normal
 ```
 
 ## Bonus: Determining Card Values
@@ -176,7 +182,23 @@ You could omit the **normal** cards or allow **high** and **low** cards to balan
 Enter your solution below.
 
 ```elixir
+count = 0
 
+[random_card_one, random_card_two, random_card_three] =
+  [Enum.random(1..13), Enum.random(1..13), Enum.random(1..13)]
+  |> Enum.each(fn card ->
+    IO.puts(card)
+
+    cond do
+      card < 7 -> count = count - low
+      card > 9 -> count = count + high
+      true -> normal
+      :ok -> normal
+    end
+
+    count
+  end)
+  |> IO.puts()
 ```
 
 ## Mark As Completed
@@ -223,9 +245,9 @@ Run the following in your command line from the curriculum folder to track and s
 Ensure that you do not already have undesired or unrelated changes by running `git status` or by checking the source control tab in Visual Studio Code.
 
 ```
-$ git checkout -b card-counting-exercise
-$ git add .
-$ git commit -m "finish card counting exercise"
+git checkout -b card-counting-exercise
+git add .
+git commit -m "finish card counting exercise"
 $ git push origin card-counting-exercise
 ```
 
